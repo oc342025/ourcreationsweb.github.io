@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .hover-zoom:hover {
+            transform: scale(1.05);
+        }
+
+        .hover-zoom:hover p {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen" style="background-image: url('bg2.jpg'); background-size: cover; background-position: center;">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+        <div class="bg-blue-400 bg-opacity-80 p-4 rounded-lg fade-in hover-zoom transition-transform duration-300">
+            <p class="text-black transition-transform duration-300">
+                Seperti Siang yang mengalah demi Malam<br>
+                dan Api yang padam karna adanya Air<br>
+                Terkadang Kita harus merelakan yang pergi<br>
+                dan kita harus merelakan yang hilang<br>
+                Kita harus menerima keadaan<br>
+                tanpa harus menyalahkan kenyataan<br>
+                Tapi hidup bukan hanya menunggu dan merelakan<br>
+                Tapi hidup juga harus tenang merubah keadaan<br>
+                dan melawan kenyataan<br>
+                Boleh jadi kamu membenci sesuatu padahal itu baik bagimu<br>
+                dan boleh jadi kamu menyukai sesuatu padahal itu buruk bagimu<br><br>
+                -Lintang_Casey
+            </p>
+        </div>
+        <div class="bg-blue-400 bg-opacity-80 p-4 rounded-lg fade-in hover-zoom transition-transform duration-300 flex items-center justify-center">
+            <p class="text-black transition-transform duration-300">Tidak ada puisi</p>
+        </div>
+        <div class="bg-blue-400 bg-opacity-80 p-4 rounded-lg fade-in hover-zoom transition-transform duration-300 flex items-center justify-center">
+            <p class="text-black transition-transform duration-300">Tidak ada puisi</p>
+        </div>
+    </div>
+</body>
+</html>
